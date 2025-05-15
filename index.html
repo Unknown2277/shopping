@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MoodCart - Shop by Mood</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="file_00000000378061f7b12ea833f00869d3" alt="" class="logo" />
+    <img src="file_00000000378061f7b12ea833f00869d3.png" width="100px" height="100px" alt="">
+    <h1>MoodCart</h1>
+    <div class="actions">
+      <input type="text" id="search" placeholder="Search products..." oninput="searchProducts()" />
+      <button id="themeToggle">🌓</button>
+      <div id="cart">🛒 <span id="cart-count">0</span></div>
+    </div>
+    <nav>
+      <button onclick="filterMood('relaxed')">Relaxed</button>
+      <button onclick="filterMood('adventurous')">Adventurous</button>
+      <button onclick="filterMood('focused')">Focused</button>
+      <button onclick="filterMood('')">All</button>
+    </nav>
+  </header>
+
+  <main id="product-container">
+    <!-- Product cards inserted here -->
+  </main>
+
+  <footer>
+    <p>© 2025 MoodCart. Designed for moods that move you.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
